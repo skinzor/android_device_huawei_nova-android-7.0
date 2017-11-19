@@ -16,7 +16,7 @@
 /version		ext4	  /dev/block/bootdevice/by-name/version		 flags=display="Version";backup=1
 /firmware    	vfat      /dev/block/bootdevice/by-name/modem  		 flags=display="Firmware";backup=1;mounttodecrypt
 /dsp            ext4      /dev/block/bootdevice/by-name/dsp	    	 flags=backup=1;subpartitionof=/firmware
-/storage/sdcard1     	vfat	  /dev/block/mmcblk1p1                   	 flags=display="SDCard";storage;wipeingui;removable
+/sdcard1     	vfat	  /dev/block/mmcblk1p1                   	 flags=display="SDCard";storage;wipeingui;removable
 /frp            emmc      /dev/block/bootdevice/by-name/config	    	 flags=display="FRP";backup=1;wipeingui
 
 /efs1       	emmc      /dev/block/bootdevice/by-name/modemst1     flags=display="EFS";backup=1
