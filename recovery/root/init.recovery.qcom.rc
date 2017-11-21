@@ -12,3 +12,6 @@ service sys_qseecomd /system/bin/qseecomd
     setenv LD_LIBRARY_PATH /system/lib64:/system/lib
     disabled
     oneshot
+
+on property:ro.crypto.state=encrypted
+    start sys_qseecomd
